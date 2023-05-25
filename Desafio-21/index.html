@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <title>Desafio-21</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="carrinho">
+            <div class="carrinho__cabecalho">
+                <p class="cabecalho__texto">seu carrinho tem <strong>5 itens</strong></p>
+                <img class="cabecalho__fechar" src="assets/Close.svg" alt="">
+            </div>
+            <ul class="lista-produtos">
+                <li class="produto">
+                    <img class="produto__imagem" src="assets/product-image-monitor.jpg" alt="Monitor gamer curvo 49">
+                    <div class="produto__info">
+                        <p class="produto__titulo">Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e DisplayPort, HDR
+                            1000, FreeSync Premium,
+                            Ajuste de Altura - LC49G95TSSLXZD</p>
+
+                        <div class="produto__utilidades">
+
+                            <p class="produto__valor">R$8599.90</p>
+
+                            <div class="produto__utilidades--botoes">
+
+                                <button value="-1" class="botaoQTD menos">
+                                    <img src="assets/Minus.svg" alt="">
+                                </button>
+                                <p class="produto__quantidade">1</p>
+                                <button value="+1" class="botaoQTD mais">
+                                    <img src="assets/Plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="produto">
+                    <img class="produto__imagem" src="assets/product-image-cadeira.jpg" alt="Monitor gamer curvo 49">
+                    <div class="produto__info">
+                        <p class="produto__titulo">Cadeira Gamer  RGB - Preta com Iluminação (Led)</p>
+
+                        <div class="produto__utilidades">
+
+                            <p class="produto__valor">R$959.90</p>
+
+                            <div class="produto__utilidades--botoes">
+
+                                <button value="-1" class="botaoQTD menos">
+                                    <img src="assets/Minus.svg" alt="">
+                                </button>
+                                <p class="produto__quantidade">1</p>
+                                <button value="+1" class="botaoQTD mais">
+                                    <img src="assets/Plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="produto">
+                    <img class="produto__imagem" src="assets/product-image-teclado.jpg" alt="Monitor gamer curvo 49">
+                    <div class="produto__info">
+                        <p class="produto__titulo">Teclado Gamer Mecânico Low Profile RGB AW510K 580</p>
+
+                        <div class="produto__utilidades">
+
+                            <p class="produto__valor">R$ 1002.00</p>
+
+                            <div class="produto__utilidades--botoes">
+
+                                <button value="-1" class="botaoQTD menos">
+                                    <img src="assets/Minus.svg" alt="">
+                                </button>
+                                <p class="produto__quantidade">1</p>
+                                <button value="+1" class="botaoQTD mais">
+                                    <img src="assets/Plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="produto">
+                    <img class="produto__imagem" src="assets/product-image-headset.jpg" alt="Monitor gamer curvo 49">
+                    <div class="produto__info">
+                        <p class="produto__titulo">Headset Gamer RGB Preto</p>
+
+                        <div class="produto__utilidades">
+
+                            <p  class="produto__valor">R$110.00</p>
+
+                            <div class="produto__utilidades--botoes">
+
+                                <button value="-1" class="botaoQTD menos">
+                                    <img src="assets/Minus.svg" alt="">
+                                </button>
+                                <p class="produto__quantidade">1</p>
+                                <button value="+1" class="botaoQTD mais">
+                                    <img src="assets/Plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="produto">
+                    <img class="produto__imagem" src="assets/product-image-patinho.jpg" alt="Monitor gamer curvo 49">
+                    <div class="produto__info">
+                        <p class="produto__titulo">Patinho de borracha</p>
+
+                        <div class="produto__utilidades">
+
+                            <p class="produto__valor">R$10.80</p>
+
+                            <div class="produto__utilidades--botoes">
+
+                                <button value="-1" class="botaoQTD menos">
+                                    <img src="assets/Minus.svg" alt="">
+                                </button>
+                                <p class="produto__quantidade">1</p>
+                                <button value="+1" class="botaoQTD mais">
+                                    <img src="assets/Plus.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="carrinho__rodape">
+                <div class="rodape__valor">
+                    <p class="valor__titulo">Total</p>
+                    <h3 class="valor__final">R$ <strong id="valor__final">10681.60</strong></h3>
+                </div>
+                <div class="box__cupom">
+                    <img class="cupom__icon" src="assets/Tag.svg" alt="">
+                    <input class="cupom__input" type="text" placeholder="Adicionar cupom">
+                </div>
+                <button class="rodape__finalizar">Finalizar compra</button>
+                <button class="rodape__finalizar carregando esconde">
+                    <img src="assets/Spinner.svg" alt="">
+                </button>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="functions.js"></script>
+</html>
