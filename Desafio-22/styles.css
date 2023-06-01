@@ -1,0 +1,123 @@
+:root{
+    --gradient: #935FD3, #9245F1;
+    --red:#AA2222;
+    --gray-100: #38343D;
+    --gray-200: #686071;
+    --gray-300: #797085;
+    --gray-400: #F4EFFA;
+    --gray-500: #FDFCFE;
+    --font: 'Heebo', sans-serif;
+    --title: bold 18px var(--font);
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(var(--gradient)) ;
+    font-family: var(--font);
+}
+
+.profile{
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    border-radius: 10px;
+    width: 375px;
+    height: 584px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.profile__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.profile__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.profile__nome{
+    font: var(--title);
+    line-height: 24px;
+}
+
+.profile__email{
+    font: 14px var(--font);
+    color: var(--gray-200);
+}
+
+.main__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 1px solid var(--gray-400);
+    margin: 20px 0;
+}
+.main__section--last{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--gray-400);
+    padding: 12px 0;
+}
+
+.main__section--last .section__opcoes{
+    justify-content: flex-start;
+    gap: 10px;
+    color: var(--gray-100);
+
+}
+
+.main__section--last svg{
+    width: 25px;
+}
+
+.section__titulo{
+    color: var(--gray-300);
+    margin: 12px 0;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4%;
+}
+
+.section__opcoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__section svg{
+    width: 25px;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    color: var(--gray-100);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.opcoes svg{
+    width: 25px;
+}
+
+.sair p{
+    color: var(--red);
+}
